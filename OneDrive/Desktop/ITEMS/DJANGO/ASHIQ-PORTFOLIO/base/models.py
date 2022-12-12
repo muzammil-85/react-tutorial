@@ -104,6 +104,8 @@ class ContactMe(models.Model):
     number = models.CharField(max_length=50, null=True, blank=True)
     place = models.CharField(max_length=100, null=True, blank=True)
     additional = models.TextField(null=True, blank=True)
+    linkedin_link = models.CharField(max_length=100, null=True, blank=True)
+    instagram_link = models.CharField(max_length=100, null=True, blank=True)
     class Meta:
         verbose_name_plural = "Contact"
 
