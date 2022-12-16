@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .models import *
-from ashiq_portfolio import settings
 
 
 
@@ -28,16 +27,3 @@ def home(request):
     }
     
     return render(request,'index.html',context)
-
-def LoginPage(request):
-    return render(request,'login.html')
-
-def registerPage(request):
-    return render(request,'login.html')
-
-
-def logoutUser(request):
-#    logout(request)
-# 	return redirect('home')
-    pass
-
